@@ -12,6 +12,56 @@
     box-sizing: border-box;
 }
 
+
+/* Desktop video wrapper (you already had similar) */
+.video-wrapper {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 56.25%;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(212,175,55,0.3);
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Play button */
+.drive-play-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 18px 35px;
+    border-radius: 40px;
+    border: 2px solid #d4af37;
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.drive-play-btn:hover {
+    background: #d4af37;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Responsive control */
+.desktop-only { display: block; }
+.mobile-only { display: none; }
+
+@media (max-width: 768px) {
+    .desktop-only { display: none; }
+    .mobile-only { display: inline-block; }
+}
+
 /* BODY */
 body {
     margin: 0;
@@ -220,17 +270,23 @@ footer {
     <h1>Our Little Movie 🎥</h1>
     <h3>Memories of us ❤️</h3>
 
+    <!-- DESKTOP VIDEO -->
+    <div class="video-wrapper desktop-only">
+        <iframe 
+            src="https://drive.google.com/file/d/19mnn9jk0JrPTrziSEgqGtPXwcgXvzm1n/preview"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- MOBILE BUTTON -->
     <a 
-        href="https://drive.google.com/file/d/19mnn9jk0JrPTrziSEgqGtPXwcgXvzm1n/view?usp=drive_link"
+        href="https://drive.google.com/file/d/19mnn9jk0JrPTrziSEgqGtPXwcgXvzm1n/view"
         target="_blank"
-        class="drive-play-btn">
+        class="drive-play-btn mobile-only">
         ▶️ Play Our Video ❤️
     </a>
-
-    <p style="margin-top:15px; color:#f5e6b8; font-size:14px;">
-        (Opens securely – just for you 🤍)
-    </p>
 </section>
+
 
 
 
@@ -270,6 +326,7 @@ function scrollToLove() {
 
 </body>
 </html>
+
 
 
 
