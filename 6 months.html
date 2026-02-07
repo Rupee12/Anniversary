@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy 6 Months ❤️</title>
+
+<!-- Aesthetic Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background: #000000;        /* BLACK BACKGROUND */
+    color: #d4af37;             /* GOLD TEXT */
+    text-align: center;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 70px 20px;
+    animation: fadeUp 1.5s ease forwards;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: radial-gradient(circle, #1a1a1a, #000000);
+    color: #d4af37;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 3em;
+    animation: zoomIn 1.5s ease;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-top: 10px;
+    color: #f5e6b8;
+}
+
+.hero button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: 1px solid #d4af37;
+    border-radius: 30px;
+    background: transparent;
+    color: #d4af37;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hero button:hover {
+    background: #d4af37;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* FLOATING HEARTS */
+.heart {
+    position: absolute;
+    bottom: -20px;
+    color: #d4af37;
+    font-size: 22px;
+    animation: floatUp 7s infinite ease-in;
+    opacity: 0.9;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-110vh) scale(1.6);
+        opacity: 0;
+    }
+}
+
+/* MESSAGE & SURPRISE */
+.love-message, .surprise {
+    background: rgba(255,255,255,0.05);
+    max-width: 850px;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(212,175,55,0.2);
+    border: 1px solid rgba(212,175,55,0.3);
+}
+
+/* GALLERY */
+.gallery .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(212,175,55,0.3);
+    transition: transform 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+
+/* VIDEO */
+.video-section video {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(212,175,55,0.3);
+}
+
+/* AUDIO */
+.audio-section audio {
+    width: 300px;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    background: #000000;
+    color: #d4af37;
+    border-top: 1px solid rgba(212,175,55,0.4);
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Happy 6 Months Of Togetherness My Love ❤️</h1>
+    <p>lovable memories fill with joy and happpiness</p>
+    <button onclick="scrollToLove()">Our Journey ↓</button>
+
+    <span class="heart" style="left:10%">❤️</span>
+    <span class="heart" style="left:25%">🤍</span>
+    <span class="heart" style="left:40%">❤️</span>
+    <span class="heart" style="left:60%">🤍</span>
+    <span class="heart" style="left:75%">❤️</span>
+    <span class="heart" style="left:90%">🤍</span>
+</section>
+
+<!-- MESSAGE -->
+<section class="love-message">
+    <h2>To My Favorite Person ❤️</h2>
+    <p>
+        Six months ago, it just started with "hello senior" & "hey junior"<br>
+        and today you became my constant, my comfort, my forever feelings.<br>
+        Every heartbeat whispers your name.<br>
+        I choose you — today and always 🤍
+    </p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+    <h1>Our Memories Our Fav📸</h1>
+    <div class="images">
+        <img src="c:\Users\ASUS\Downloads\WhatsApp Image 2026-02-07 at 18.57.16.jpeg">
+        <img src="c:\Users\ASUS\Downloads\WhatsApp Image 2026-02-07 at 18.57.14.jpeg">
+        <img src="c:\Users\ASUS\Downloads\WhatsApp Image 2026-02-07 at 18.57.16 (1).jpeg">
+        <img src="c:\Users\ASUS\Downloads\WhatsApp Image 2026-02-07 at 19.06.30.jpeg">
+        <img src="c:\Users\ASUS\Downloads\WhatsApp Image 2026-02-07 at 19.03.58.jpeg">
+    </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section">
+    <h1>Our Little Movie 🎥</h1>
+    <h3>Memories of us ❤️</h3>
+    <video controls>
+        <source src="c:\Users\ASUS\Desktop\VN20260207_202721.mp4" type="video/mp4">
+    </video>
+</section>
+
+<!-- AUDIO -->
+<section class="audio-section">
+    <h1>Shayri For You 🎶</h1>
+    <h4>...🌸</h4>
+    <audio controls>
+        <source src="c:\Users\ASUS\Desktop\extracted-audio (1) (mp3cut.net).wav" type="audio/mpeg">
+    </audio>
+</section>
+
+<!-- SURPRISE -->
+<section class="surprise">
+    <h1>Forever With You ❤️</h1>
+    <p>
+        This is more than six months,<br>
+        this is a promise of a lifetime.<br>
+        Happy anniversary, my love ❤️<br>
+         <strong> I Love You Soo Much</strong>
+    </p>
+</section>
+
+<footer>
+    Made with pure love By Mrs Akshar Kakumani ❤️🤍
+</footer>
+
+<script>
+function scrollToLove() {
+    document.querySelector(".love-message")
+    .scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>
